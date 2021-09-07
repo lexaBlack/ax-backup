@@ -63,13 +63,15 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <% for (let i = 0; i < fileInfo.length ; i++){%>
                                                 <tr>
                                                     <td><i class="fa fa-file-zip-o" style="font-size: 21px;"></i></td>
-                                                    <td>Cell 1</td>
-                                                    <td>Cell 1</td>
+                                                    <td><%= fileInfo[i].filenameDate %></td>
+                                                    <td><%= fileInfo[i].createdAt %></td>
                                                     <td>.zip</td>
-                                                    <td><a href="#">Access File</a>.</td>
+                                                    <td><a href="<%= fileInfo[i].fileUrl %>">Access File</a>.</td>
                                                 </tr>
+                                            <% } %> 
                                             </tbody>
                                         </table>
                                     </div>

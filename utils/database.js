@@ -2,17 +2,17 @@ const Sequelize = require('sequelize');
 
 
 
-/*
 
-const sequelize = new Sequelize('postgres://popaqgifietplg:f3a5d6d1b92426fee6fa1adae6e90910cd95d40bf504697bbee7d638f6723c1e@ec2-18-211-97-89.compute-1.amazonaws.com:5432/dep1tuvh1sp2c3', {
+
+const sequelize = new Sequelize('postgres://bfjfbhtmzqmjtg:e52ec0f90b10ae8f1e27ef91bb987e9407193e46662e7ddd33ac9dd08aac0ffd@ec2-54-156-24-159.compute-1.amazonaws.com:5432/d5s447ujrhafoh', {
     dialectOptions: {
         ssl: true
     }
 });
 
-*/
 
 
+/*
 
 const sequelize = new Sequelize('liveclean','admin','password',{ //create new database for this
     dialect:'mysql',
@@ -22,5 +22,5 @@ const sequelize = new Sequelize('liveclean','admin','password',{ //create new da
         min: 0,
         idle: 1000
       }});  
-
+*/
 module.exports = sequelize;
