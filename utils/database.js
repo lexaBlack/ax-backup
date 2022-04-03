@@ -1,10 +1,8 @@
 const Sequelize = require('sequelize');
+require("dotenv").config()
 
 
-
-
-
-const sequelize = new Sequelize('postgres://bfjfbhtmzqmjtg:e52ec0f90b10ae8f1e27ef91bb987e9407193e46662e7ddd33ac9dd08aac0ffd@ec2-54-156-24-159.compute-1.amazonaws.com:5432/d5s447ujrhafoh', {
+const sequelize = new Sequelize(process.env.DB_KEY, {
     dialectOptions: {
         ssl: true
     }
